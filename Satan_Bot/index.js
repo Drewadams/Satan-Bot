@@ -1,10 +1,9 @@
 const commando = require('discord.js-commando');
 const path = require('path');
 const aws = require('aws-sdk');
-const config = require('./config.json');
 
 const client = new commando.Client({
-    owner: config.owner,
+    owner: process.env.owner,
     commandPrefix: 'stn.',
     unknownCommandResponse: false,
     disableEveryone: true
@@ -34,4 +33,4 @@ client.on('message', message => {
 });
 
 // Bot login
-client.login(config.token);
+client.login(process.env.token);
