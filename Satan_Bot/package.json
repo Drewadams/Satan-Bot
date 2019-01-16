@@ -1,10 +1,10 @@
 {
-  "name": "NP Bot",
+  "name": "Satan Bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "aws-sdk": "^2.382.0",
+    "aws-sdk": "^2.388.0",
     "discord.js": "^11.4.2",
     "discord.js-commando": "^0.10.0",
     "path": "^0.12.7"
