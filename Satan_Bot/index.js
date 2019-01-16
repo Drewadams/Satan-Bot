@@ -30,6 +30,9 @@ client.on('message', message => {
     console.log(`just deleted this message: ${msgCollect}`);
     message.channel.send('Fuck off you racist cunt.');
   }
+  if (msg.includes('daddy')) {
+    message.channel.send('I\'m your dad now bitch.');
+  }
 });
 
 // Bot login
