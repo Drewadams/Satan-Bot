@@ -36,7 +36,7 @@ client.on('message', message => {
 });
 
 // More racism protection.
-client.on('messageUpdate', (oldMessage, newMessage) => {
+client.on('messageUpdate', oldMessage, newMessage => {
   let msgCollect = newMessage.content();
   let msg = msgCollect.toLowerCase();
   if(msg.includes('nigger') || msg.includes('n word') || msg.includes('n1gger') || msg.includes('n i g g e r') || msg.includes('nlgger') || msg.includes('n1gg3r')){
