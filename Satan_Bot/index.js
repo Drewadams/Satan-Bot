@@ -35,5 +35,15 @@ client.on('message', message => {
   }
 });
 
+// More racism protection.
+client.on('messageUpdate', (oldMessage, newMessage) => {
+  let msg = newMessage.content.toLowerCase();
+  if(msg.includes('nigger') || msg.includes('n word') || msg.includes('n1gger') || msg.includes('n i g g e r') || msg.includes('nlgger') || msg.includes('n1gg3r')){
+    message.delete();
+    console.log(`just deleted this message: ${msgCollect}`);
+    message.channel.send('Fuck off you racist cunt. I can\'t believe you made me code this in you ass.');
+   }
+}
+
 // Bot login
 client.login(process.env.token);
