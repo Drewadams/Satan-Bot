@@ -25,7 +25,7 @@ client.on('ready', () => {
 client.on('message', message => {
   let msgCollect = message.content;
   let msg = msgCollect.toLowerCase();
-  if (msg.includes('nigger') || msg.includes('n word') || msg.includes('n1gger') || msg.includes('n i g g e r')) {
+  if (msg.includes('nigger') || msg.includes('n word') || msg.includes('n1gger') || msg.includes('n i g g e r') || msg.includes('nlgger') || msg.includes('n1gg3r')) {
     message.delete();
     console.log(`just deleted this message: ${msgCollect}`);
     message.channel.send('Fuck off you racist cunt.');
