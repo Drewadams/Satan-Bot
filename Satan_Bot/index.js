@@ -44,7 +44,7 @@ client.on('messageUpdate', (oldMessage, newMessage) => {
     console.log(`just deleted this message: ${msgCollect}`);
     // message.channel.send('Fuck off you racist cunt. I can\'t believe you made me code this in you ass.');
   }
-};
+});
 
 // Bot login
 client.login(process.env.token);
